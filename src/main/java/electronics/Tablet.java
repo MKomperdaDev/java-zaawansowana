@@ -1,6 +1,6 @@
 package electronics;
 
-public class Tablet extends Device implements EmailSender{
+public class Tablet extends Device implements EmailSender {
     @Override
     void turmOn() {
         System.out.println("Wlaczam tablet");
@@ -14,13 +14,14 @@ public class Tablet extends Device implements EmailSender{
     public Tablet(String model) {
         super(model);
     }
-    public void sendMessage(Messages ms, String message){
+
+    public void sendMessage(Messages ms, String message) {
         System.out.println("Wysylam przy pomocy Tableta wiadomosc " + ms + " o tresci: " + message);
     }
 
     @Override
     public void sendEmail(String message) {
         System.out.println("Uzywam tebletu ");
-        sendMessage(Messages.Email , message);
+        sendMessage(Messages.Email, message);
     }
 }

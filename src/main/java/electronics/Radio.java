@@ -14,7 +14,8 @@ public class Radio extends Device {
     void turmOff() {
         System.out.println("Wylaczam radnio");
     }
-    public void changeChanel(String channel){
+
+    public void changeChanel(String channel) {
         System.out.println("Zmieniam kanal na " + channel);
     }
 }

@@ -8,5 +8,6 @@ public abstract class Device {
     }
 
     abstract void turmOn();
+
     abstract void turmOff();
 }

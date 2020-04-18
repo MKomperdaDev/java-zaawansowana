@@ -1,6 +1,6 @@
 package electronics;
 
-public class Phone extends Device implements EmailSender{
+public class Phone extends Device implements EmailSender {
     public Phone(String model, int number) {
         super(model);
         this.number = number;
@@ -15,9 +15,10 @@ public class Phone extends Device implements EmailSender{
     void turmOff() {
         System.out.println("Wylaczam telefon");
     }
+
     int number;
 
-    public void makeCall( String callNumber){
+    public void makeCall(String callNumber) {
         System.out.println(" Z numeru " + number + " dzwonie do " + callNumber);
     }
 
